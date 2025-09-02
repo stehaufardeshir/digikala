@@ -1,0 +1,111 @@
+<nav class="header-menu-center-main">
+  <div class="header-menu-center-main-item">
+    <a href="#" class="menu">
+      <img src="./images/header/kalaha.svg" alt="kalaha" />
+      دسته بندی کالاها
+    </a>
+
+    <!-- Submenu -->
+    <div class="submenu">
+      <div class="submenu-right">
+        <div class="submenu-right-item">
+          <a href="#" class="submenu-right-item-link">موبایل</a>
+          <div class="submenu-right-submenu"><h1>Mobile</h1></div>
+        </div>
+        <div class="submenu-right-item">
+          <a href="#" class="submenu-right-item-link">کالای دیجیتال</a>
+          <div class="submenu-right-submenu"><h1>Digital</h1></div>
+        </div>
+        <div class="submenu-right-item">
+          <a href="#" class="submenu-right-item-link">خانه فرهنگ هنر</a>
+          <div class="submenu-right-submenu"><h1>Home</h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other menu items without submenu -->
+  <div class="header-menu-center-main-item">
+    <a href="#">
+      <img src="./images/header/prozent.svg" alt="darsad" />
+      شگفت انگیز ها
+    </a>
+  </div>
+</nav>
+<style>
+  .header-menu-center-main {
+    display: flex;
+    gap: 15px;
+    height: 40px;
+    align-items: center;
+
+    .header-menu-center-main-item {
+      position: relative;
+
+      a.menu {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #2b2b2b;
+        text-decoration: none;
+        padding: 0 10px;
+        height: 100%;
+
+        &:hover {
+          color: #029a49; // optional hover color
+        }
+      }
+
+      .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 300px; // adjust as needed
+        background-color: #2b2b2b;
+        padding: 10px;
+
+        .submenu-right {
+          display: flex;
+          flex-direction: column;
+
+          .submenu-right-item {
+            position: relative;
+
+            .submenu-right-item-link {
+              display: block;
+              padding: 5px 10px;
+              color: white;
+              text-decoration: none;
+
+              &:hover {
+                background-color: #444;
+              }
+            }
+
+            .submenu-right-submenu {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 100%;
+              width: 200px;
+              background-color: crimson;
+              color: white;
+              padding: 10px;
+            }
+
+            &:hover .submenu-right-submenu {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &:hover .submenu {
+        display: block;
+      }
+    }
+  }
+</style>

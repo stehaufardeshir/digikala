@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .form-container {
+        width: 350px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 30px 25px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .form-container img {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      .form-container h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      .form-container p {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .form-container input {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #d33a49;
+        border-radius: 6px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center; /* 👈 sorgt dafür, dass Text in der Mitte ist */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .error-text {
+        font-size: 12px;
+        color: #d33a49;
+        margin-bottom: 15px;
+        text-align: center; /* 👈 jetzt auch zentriert */
+      }
+
+      .form-container button {
+        width: 90%;
+        padding: 12px;
+        background: #f44357;
+        color: #fff;
+        font-size: 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        a {
+          text-decoration: none;
+          color: #2b2b22;
+        }
+      }
+
+      .form-container button:hover {
+        background: #e13c4e;
+      }
+
+      .form-container small {
+        display: block;
+        margin-top: 15px;
+        font-size: 12px;
+        color: #555;
+        text-align: center;
+      }
+
+      .form-container small a {
+        color: #0073e6;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <img src="./images/logo/logo.png" alt="Logo" />
+      <h2>ورود | ثبت‌نام</h2>
+      <p>سلام!<br />لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
+      <input type="text" placeholder="" />
+      <div class="error-text">لطفا این قسمت را خالی نگذارید</div>
+      <button onclick="window.location.href='./index.html'">
+        <a href="./index.html">ورود</a>
+      </button>
+      <small>
+        ورود شما به معنای پذیرش <a href="#">شرایط دیجی‌کالا</a> و
+        <a href="#">قوانین حریم‌خصوصی</a> است
+      </small>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Yekan;
+  src: url(../fonts/iranyekanwebregular.woff2);
+}
+@font-face {
+  font-family: YekanN;
+  src: url(../fonts/Yekan.ttf);
+}
+:root {
+  --font-family: Yekan;
+  --font-number: YekanN;
+}
+.wrapper {
+  width: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 14px;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+}
+@keyframes slideAway {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
